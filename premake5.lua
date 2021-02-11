@@ -29,10 +29,11 @@ project "ImGui"
 	
 	filter "system:windows"
 		systemversion "latest"
+		debugformat "c7"
 
 	filter "configurations:Debug"
 		runtime "Debug"
-		symbols "on"
+		symbols "full"
 
 	filter "configurations:Release"
 		runtime "Release"
